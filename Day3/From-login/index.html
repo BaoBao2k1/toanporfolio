@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-family: Helvetica, sans-serif;
+        }
+        
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+      }
+      body {
+        background-color: rgba(249, 249, 249, 0.8);
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 30vh;
+        margin-bottom: 24px;
+      }
+      form {
+        padding: 24px;
+        border-radius: 8px;
+        margin: 0 auto;
+        background-color: #fff;
+        width: 320px;
+        
+        .form-goup {
+           margin-top: 10px;
+        }
+
+        .label,
+        input {
+          width: 100%;
+          padding: 8px;
+          border-radius: 4px;
+          border: 1px solid rgba(217, 217, 217, 1);
+        }
+        label {
+          margin-bottom: 8px;
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+
+        }
+        button{
+            margin-top: 16px;
+            width: 100%;
+            background-color: rgba(0, 136, 255, 1);
+            border-radius: 8px;
+            border: none;
+            padding: 8px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form action="login">
+
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" placeholder="example@gmail.com" />
+      </div>
+
+      <div class="form-group flex">
+        <label for="password">Password</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <input type="password" placeholder="********" />
+
+      <div class="form-group">
+        <button>Login</button>
+      </div>
+      
+      <div class="form-group flex">
+        <p>Don’t have account?<a href="#">Create new account</a></p>
+      </div>
+    </form>
+  </body>
+</html>
