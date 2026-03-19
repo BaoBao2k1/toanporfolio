@@ -1,42 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NƠI CHỨA BÀI TẬP</title>
-    
-    <style>
-        table ,th ,td{
-            border: 1px solid #000;
-            border-collapse: collapse;
-        }
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar-menu">
+        <div class="img-bt">
+          <img src="./images/BaoToan.jpg" alt="" />
+          <div class="Profile">
+            <h2>Bùi Bảo Toàn</h2>
+            <p>
+              Graphic Designer <br />
+              Học thêm Fullstack JS
+            </p>
+          </div>
+        </div>
+        <div class="Software">
+          <div class="img-group">
+            <img
+              style="width: 20px; height: 20px"
+              src="./images/Photoshop_icon.svg.png"
+              alt=""
+            />
+            <span>Photoshop</span>
+          </div>
 
-        th, td{
-           
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <h1>BÙI BẢO TOÀN</h1>
-    <table>
-        <tr>
-            <th>Số Buổi</th>
-            <th> Link Nộp Bài Tập</th>
-            <th>Ghi Chú</th>
-        </tr>
-        <tr>
-            <td>Day 01</td>
-            <td><a href="./Day1/index.html">Giới Thiệu Bản Thân</a></td>
-            <td>Đã deloy</td>
-        </tr>
-        <tr>
-            <td>Day 03</td>
-            <td rowspan="3"><a href="./Day3/Product-Info/index.html">Product</a>,<a href="./Day3/From-login/index.html">Login</a>
-            <a href="./Day3/Collection-list/index.html">Popular Collections</a>
-            </td>
-            <td></td>
-        </tr>
-    </table>
-</body>
+          <div class="img-group">
+            <img
+              style="width: 20px; height: 20px"
+              src="./images/Illustrator_icon.svg"
+              alt=""
+            />
+            <span>Illustrator</span>
+          </div>
+          <div class="img-group">
+            <img
+              style="width: 20px; height: 20px"
+              src="./images/5968525.jpg"
+              alt=""
+            />
+            <span>Premiere</span>
+          </div>
+          <div class="img-group">
+            <img
+              style="width: 20px; height: 20px"
+              src="./images/AfterEffects_icon.jpg"
+              alt=""
+            />
+            <span> After Effects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contanier">
+        <div class="background">
+          <img src="./images/backgroud-fotoi.png" alt="" />
+        </div>
+
+        <div class="content">
+          <table class="link-tab">
+            <thead class="title">
+              <tr>
+                <th>Số Buổi</th>
+                <th>Link Nộp Bài Tập</th>
+                <th>Ghi Chú</th>
+              </tr>
+              <tr></tr>
+            </thead>
+            <tbody class="body-title">
+              <tr>
+                <td>Day 01</td>
+                <td><a href="./Day1/index.html">Giới Thiệu Bản Thân</a></td>
+                <td>Đã Deloy</td>
+              </tr>
+
+              <tr>
+                <td>Day 03</td>
+                <td rowspan="3">
+                  <a href="./Day3/Product-Info/index.html">Product</a>
+                  <a href="./Day3/From-login/index.html">Login</a>
+                  <a href="./Day3/Collection-list/index.html"
+                    >Popular Collections</a
+                  >
+                </td>
+                <td>Đã Deloy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+  <script>
+    
+  </script>
 </html>
