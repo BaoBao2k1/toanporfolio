@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient-design: linear-gradient(135deg, #BBCBFB, #F1D4FF);
+   --gradient-engineering: linear-gradient(135deg, #FBBBDA, #FFD4D4);
+  --gradient-operations: linear-gradient(135deg, #BBEBFB,  #EFD4FF);
+  --gradient-people: linear-gradient(135deg, #BBFBE4, #D4E0FF);
+  --gradient-sales: linear-gradient(135deg, #BBD8FB, #FFD4D4);
+  --gradient-university: linear-gradient(135deg, #FFDEC7, #D4D9FF );
+}
+
+body{
+   background-color: rgba(243, 246, 255, 1); 
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container{
+    max-width: 1054px;
+    width: 100%;
+    margin: 210px 273px;
+}  
+
+h1{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.car-skill{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-item{
+        background-color: rgba(255, 255, 255, 1);
+        padding: 48px 40px;
+        border-radius: 16px;
+        width: 330px;
+        height: 251px;  
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0 24px 44px #B4BFE166;
+    }
+
+    .job-title{
+        gap: 16px;
+
+         i{
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 14px;
+            width: 64px;
+            height: 64px;
+            font-size: 32px;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .job-link {
+        width: 100%;
+
+        a{
+            display: flex;
+            justify-content: center;
+            width: inherit;
+            text-decoration: none;
+            padding: 16px;
+            border:  1px solid rgba(194, 197, 226, 1);
+            border-radius: 8px;  
+            font-size: 18px;
+            font-weight: 500;
+            color: #1E2246;
+            cursor: pointer;
+        }
+}
+
+
+.job-link a:hover,
+.job-link a.active{
+    background-color: #1E2246;
+    color: rgba(255, 255, 255, 1);
+}
+
+.description{
+    text-align: center;
+    padding: 61px 105px 0 104px;
+    p{
+        color: #1E2246;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.design i{
+    background: var(--gradient-design);
+}
+
+.engineering i{
+    background: var(--gradient-engineering);
+}
+
+.operations i{
+    background: var(--gradient-operations);
+}
+
+.people i{
+    background: var(--gradient-people);
+}
+
+.sales i{
+    background: var(--gradient-sales);
+}
+
+.university i{
+    background: var(--gradient-university);
+}
+
+
+
+
+
+
+
+
+
+   
+    
+    
