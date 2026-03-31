@@ -31,7 +31,7 @@
         width: 640px;
         height: 464px;
         border-radius: 24px;
-        position: relative;
+        position: absolute;
         box-shadow: 0 14px 52px #8675b459;
       }
 
