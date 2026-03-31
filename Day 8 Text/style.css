@@ -32,7 +32,6 @@
         height: 464px;
         border-radius: 24px;
         position: relative;
-        z-index: 10;
         box-shadow: 0 14px 52px #8675b459;
       }
 
@@ -133,7 +132,10 @@
          outline: 1px solid #DBD5EC;
         }
          
-      .cricle {
+      .rectangle {
         position: absolute;
-        z-index: -1;
+        background-color: #EFEBFD;
+        width: 421px;
+        height: 613px;
+        border-radius: 31px;
       }
