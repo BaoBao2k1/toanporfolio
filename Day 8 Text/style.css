@@ -33,7 +33,7 @@
         border-radius: 24px;
         position: relative;
         z-index: 10;
-
+        box-shadow: 0 14px 52px #8675b459;
       }
 
       .form-search{
@@ -133,5 +133,4 @@
       .cricle {
         position: absolute;
         z-index: -1;
-        background-color: #EFEBFD;
       }
