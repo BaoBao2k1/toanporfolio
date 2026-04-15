@@ -1,0 +1,252 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a,
+        p{
+            text-decoration: none;
+            font-family: 'BeaufortforLOL-Bold', cursive;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'BeaufortforLOL-Bold', cursive;
+        }
+
+        li,
+        ol{
+            
+            list-style: none;
+        }
+
+        img{
+            object-fit: cover;
+            cursor: pointer;
+            display: block;
+        }
+        
+        .banner-hero img{
+           width: 100%;
+        }
+
+        .header-main{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            .menu{
+                display: flex;
+                gap: 32px;
+
+                li a{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 100%;
+                    color: #000;
+                }
+            }
+        }
+
+
+        .box-card{
+            margin-top: 62px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 32px;
+            
+            
+            }
+
+            .card{
+                overflow: hidden;
+                width: 100%;
+
+                .card-img{
+                    width: 100%;
+                    
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .card-content{
+                background-color: #0E4C67;
+                padding: 39px 140px;
+                text-align: center;
+                 
+                h3{
+                    color: #ffff;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                }
+            }
+        
+            .video{
+                max-width: 100%;
+                overflow: hidden;
+                margin-top: 64px;
+                
+                iframe{
+                    width: 100%;
+                    height: 792px;
+                }
+            }
+
+            .footer{
+                margin-top: 73px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #0E4C67;
+                padding: 24px 23px;
+                color: #fff;
+
+                p{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 100%; 
+
+                }
+
+                 .from-email input {
+                        padding: 15px;
+                        border: 2px solid #FFA800;
+                        outline: none;
+                        background: none;
+                        border-radius: 4px;
+                        color: #fff;
+
+                        margin-right: 26px;
+
+                        &::placeholder{
+                            color: white;
+                        }
+                }
+
+                 .from-email button{
+                    border-radius: 5px;
+                    background-color: #FFA800;
+                    border: none;
+                    padding: 15px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 100%;
+                 }
+            }
+        
+/* repovise */
+
+/* Tablet (màn hình <= 1024px) */
+@media (max-width: 1024px) {
+  .box-card {
+    grid-template-columns: repeat(3, 1fr); /* 3 card mỗi hàng */
+    gap: 24px;
+  }
+
+  .card-content {
+    padding: 24px 0;
+  }
+
+  .video iframe {
+    height: 520px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* Mobile (màn hình <= 768px) */
+@media (max-width: 768px) {
+  .header-main {
+    gap: 16px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .box-card {
+    grid-template-columns: repeat(2, 1fr); /* 2 card mỗi hàng */
+    gap: 16px;
+  }
+
+  .card-content {
+    padding: 20px 0;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .video iframe {
+    height: 400px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .from-email {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .from-email input {
+    width: 100%;
+  }
+
+  .from-email button {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (màn hình <= 480px) */
+@media (max-width: 480px) {
+  .box-card {
+    grid-template-columns: 1fr; /* mỗi hàng 1 card */
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  .banner-hero img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .video iframe {
+    height: 280px;
+  }
+}
